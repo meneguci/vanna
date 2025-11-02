@@ -5,6 +5,7 @@ This package contains concrete implementations of core abstractions and capabili
 """
 
 from .anthropic import AnthropicLlmService
+from .azureopenai import AzureOpenAILlmService
 from .local import MemoryConversationStore
 from .mock import MockLlmService
 from .openai import OpenAILlmService, OpenAIResponsesService
@@ -16,6 +17,7 @@ __all__ = [
     "OpenAILlmService",
     "OpenAIResponsesService",
     "AnthropicLlmService",
+    "AzureOpenAILlmService",
     "MockLlmService",
     "MemoryConversationStore",
     "SqliteRunner",
